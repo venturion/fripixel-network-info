@@ -25,7 +25,7 @@
     <description>Network Information</description>
     <license>Apache 2.0</license>
     <keywords>cordova,netword</keywords>
-    <repo>https://git-wip-us.apache.org/repos/asf/fripixel-network-info.git</repo>
+    <repo>https://github.com/venturion/fripixel-network-info.git</repo>
     <issue>https://issues.apache.org/jira/browse/CB/component/12320653</issue>
 
     <engines>
