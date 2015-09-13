@@ -30,7 +30,7 @@ public class NetworkInfo extends CordovaPlugin {
     }
 
     private String getBSSID(){
-        WifiManager manager = (WifiManager)getApplicationContext().getSystemService(Context.WIFI_SERVICE);
+        WifiManager manager = (WifiManager) this.cordova.getActivity().getApplicationContext().getSystemService(Context.WIFI_SERVICE);
         WifiInfo info = manager.getConnectionInfo();
 
         String bssid = info.getBSSID();
