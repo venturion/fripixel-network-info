@@ -1,5 +1,7 @@
 package org.apache.cordova.fripixel;
 
+import android.net.wifi.WifiInfo;
+import android.net.wifi.WifiManager;
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CordovaWebView;
@@ -11,10 +13,10 @@ public class NetworkInfo extends CordovaPlugin {
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
         if (action.equals("bssid")) {
-            String bssid = this.getBSSID(message, callbackContext);
+            String bssid = this.getBSSID();
 
             if(bssid != null){
-                callbackContext.success(message);
+                callbackContext.success(bssid);
                 return true;
             }
             else{
