@@ -12,7 +12,7 @@ public class NetworkInfo extends CordovaPlugin {
 
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
-        if (action.equals("bssid")) {
+
             String bssid = this.getBSSID();
 
             if(bssid != null){
@@ -24,7 +24,7 @@ public class NetworkInfo extends CordovaPlugin {
                 return false;
             }
 
-        }
+        
         return false;
 
     }
