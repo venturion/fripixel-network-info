@@ -22,8 +22,8 @@
 var exec = require('cordova/exec');
 
 var networkinfo = {
-    bssid:function() {
-        exec(successCallback, errorCallback, "NetworkInfo", "bssid", []);
+    bssid:function(type) {
+        exec(successCallback, errorCallback, "NetworkInfo", type, []);
     }
 };
 
