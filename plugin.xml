@@ -19,7 +19,7 @@
 -->
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-           id="cordova-plugin-networkinfo"
+           id="fripixel-network-info"
       version="2.1.0">
     <name>NetworkInfo</name>
     <description>Network Information</description>
