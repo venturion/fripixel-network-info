@@ -1,5 +1,5 @@
 package org.apache.cordova.fripixel;
-
+import android.content.Context;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import org.apache.cordova.CallbackContext;
